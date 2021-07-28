@@ -1,5 +1,10 @@
 
-
+/*------------
+ common utilities 
+------------------*/
+.specific-heading-color{
+    color: #E76F51;
+}
 /*------------ 
 header section 
 ----------------*/
@@ -22,4 +27,14 @@ header section
  ----------------- */
 .grayscale{
     filter: grayscale(100%);
+}
+/*---------- 
+client review
+-------------- */
+.filled{
+    color:#E77C40;
+    padding-right: 5px;
+}
+.empty{
+    color: #E77C40;
 }
