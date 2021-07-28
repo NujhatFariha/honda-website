@@ -1,0 +1,25 @@
+
+
+/*------------ 
+header section 
+----------------*/
+.bg-header{
+    background-color: #264653;
+    color: #FFFFFF;
+}
+.purchase-btn{
+    padding: 10px 46px;
+    border: none;
+    background-color:#E76F51;
+    color: #FFFFFF;
+    border-radius: 5px;
+}
+
+/* main section */
+
+/*----------------
+ featured bikes
+ ----------------- */
+.grayscale{
+    filter: grayscale(100%);
+}
