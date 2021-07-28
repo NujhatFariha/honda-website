@@ -16,12 +16,36 @@
     <!-- header start -->
     <header class="container-fluid bg-header">
         <section class="container">
-            <div class="row d-flex align-items-center justify-content-evenly gx-5">
+            <div class="row d-lg-flex align-items-center">
                 <div class="col-lg-5 my-5">
                     <small>Computer-controlled digital transistorized with electronic advance</small>
                     <h1 class="fs-1 fw-bolder my-2">Honda CBR 300R</h1>
                     <p class="my-4">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-                    <button class="purchase-btn">Purchase</button>     
+                    <!-- Button with modal -->
+                    <button type="button" class="purchase-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Purchase
+                      </button>
+                      <!-- Modal -->
+                      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">Explore Our Collection</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              Hello! Do you wish to purchase cool bikes from us? Explore our collection for more details.
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-primary">View Cart</button>
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    
+
+
                 </div>
                 <div class="col-lg-7 my-5">
                     <img src="images/header-bike.png" alt="" class="img-fluid">
@@ -32,10 +56,11 @@
     <!-- header end -->
 
     <main>
+
         <!-- Featured Bike Section -->
         <section class="container">
             <div class="text-center my-5">
-                <h2 class="fs-2 fw-bolder text-reset">Featured Bikes 2021</h2>
+                <h1 class="fw-bolder text-reset">Featured Bikes 2021</h1>
                 <small class="text-danger mb-5">Best bike collection</small>
             </div>
             <div class="row g-5">
@@ -52,70 +77,138 @@
         </section>
 
         <!-- Client Review Section -->
-        <section class="container">
-            <h2 class="fs-1 fw-bolder text-center text-reset mt-5">Happy <span class="specific-heading-color">Client says</span></h2>
-        <div class="row row-cols-1 row-cols-md-3 g-5 p-5">
+        <section class="container my-5 py-5">
+            <div class="my-5">
+                <h1 class="fw-bolder text-center text-reset my-5">Happy <span class="specific-heading-color">Client says</span></h1>
+        <div class="row row-cols-1 row-cols-md-3 row-cols-lg-3 g-5">
             <div class="col">
-                <div class="card p-4">
-                  <img src="images/user-1.png" class="card-img-top rounded-circle mx-auto" alt="..." style="width: 150px; height: 150px;">
+                <div class="card p-4 rounded-3">
+                  <img src="images/user-1.png" class="card-img-top rounded-circle mx-auto img-fluid" alt="..." style="width: 150px; height: 150px;">
                   <div class="text-center">
                       <article class="card-body">
                           <p class="card-text">They provide very good service. Bikes were in very good condition. I would definitely recommend them.</p>
-                          </article>
-                          <div class="d-flex justify-content-center my-3">
-                              <i class="fas fa-star filled"></i>
-                              <i class="fas fa-star filled"></i>
-                              <i class="fas fa-star filled"></i>
-                              <i class="fas fa-star filled"></i>
-                              <i class="far fa-star empty"></i>
-                          </div>
-                          <small class="fw-bolder text-primary py-5">Andrew Miles</small>
-                          <br>
-                          <small class="fw-bolder">Engineer</small>
+                      </article>
+                      <div class="d-flex justify-content-center my-3">
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star filled"></i>
+                        <i class="far fa-star empty"></i>
+                    </div>
+                    <small class="fw-bolder text-primary py-5">Andrew Miles</small>
+                    <br>
+                    <small class="fw-bolder">Engineer</small>       
                   </div>
                 </div>
-              </div>
+            </div>
             <div class="col">
-                <div class="card p-4">
+                <div class="card p-4 rounded-3">
                   <img src="images/user-2.png" class="card-img-top rounded-circle mx-auto" alt="..." style="width: 150px; height: 150px;">
                   <div class="text-center">
                       <article class="card-body">
-                          <p class="card-text">We rented their bike last month. The bikes were super good and the service they provided was really very good.</p>
-                          </article>
-                          <div class="d-flex justify-content-center my-3">
-                              <i class="fas fa-star filled"></i>
-                              <i class="fas fa-star filled"></i>
-                              <i class="fas fa-star filled"></i>
-                              <i class="fas fa-star filled"></i>
-                              <i class="far fa-star empty"></i>
-                          </div>
-                          <small class="fw-bolder text-primary py-5">Regina Miles</small>
-                          <br>
-                          <small class="fw-bolder">banker</small>
+                          <p class="card-text">We rented their bike last month. The bikes were super good and the service was really very good.</p>
+                      </article>
+                      <div class="d-flex justify-content-center my-3">
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star filled"></i>
+                        <i class="far fa-star empty"></i>
+                      </div>
+                    <small class="fw-bolder text-primary py-5">Regina Miles</small>
+                    <br>
+                    <small class="fw-bolder">banker</small>    
                   </div>
                 </div>
-              </div>
+            </div>
             <div class="col">
-              <div class="card p-4">
+              <div class="card p-4 rounded-3">
                 <img src="images/user-3.png" class="card-img-top rounded-circle mx-auto" alt="..." style="width: 150px; height: 150px;">
                 <div class="text-center">
                     <article class="card-body">
                         <p class="card-text">I really love their service.Their rented car and their service is very good.they provide best quality bike.</p>
-                        </article>
-                        <div class="d-flex justify-content-center my-3">
-                            <i class="fas fa-star filled"></i>
-                            <i class="fas fa-star filled"></i>
-                            <i class="fas fa-star filled"></i>
-                            <i class="fas fa-star filled"></i>
-                            <i class="far fa-star empty"></i>
-                        </div>
-                        <small class="fw-bolder text-primary py-5">Nora Amiely</small>
-                        <br>
-                        <small class="fw-bolder">Teacher</small>
+                    </article>
+                    <div class="d-flex justify-content-center my-3">
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star filled"></i>
+                        <i class="far fa-star empty"></i>
+                    </div>
+                    <small class="fw-bolder text-primary py-5">Nora Amiely</small>
+                    <br>
+                    <small class="fw-bolder">Teacher</small>   
                 </div>
               </div>
             </div>
-          </div>
+        </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="container my-5">
+            <h1 class="fw-bolder text-center text-reset mt-5">Frequently Asked <span class="specific-heading-color">Questions</span></h1>
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6 mt-5 p-5">
+                    <img src="images/faq.png" alt="" class="w-100">
+                </div>
+                <div class="col-lg-6">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item m-3 rounded-3">
+                          <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                What are the most important things I should
+                                know about riding a bike?
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Safety First! Always obey the rules of the road. Obey all traffic signals, signs, and laws. Get in the mindset of “driving” your bike—not just “riding” your bike. This will help you be a more focused and legally compliant bike rider. 
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item m-3">
+                          <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                How can I tell if my helmet is old and I need a 
+                                new one?
+                            </button>
+                          </h2>
+                          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                If your helmet suffers any kind of impact, no matter how small, its protective qualities will be compromised. You should replace your helmet before riding again. Lastly, a riding helmet should fit snug on your head. If your helmet ever becomes too loose or too tight, it's time for a new one.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item m-3">
+                          <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                My bike has been in storage is it safe to ride?
+                            </button>
+                          </h2>
+                          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                If the bike was in decent shape when put away, and has not been exposed to the weather, there's probably very little that needs to be done.You can use it after proper maintainance.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item m-3">
+                          <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                What rules should I follow when riding my bike?
+                            </button>
+                          </h2>
+                          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Go With the Traffic Flow.Ride on the right in the same direction as other vehicles.
+                                Obey All Traffic Laws Yield to Traffic When Appropriate. Stay Alert at All Times.Look Before Turning.Watch for Parked Cars.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>   
+            </div>
+
 
         </section>
         
