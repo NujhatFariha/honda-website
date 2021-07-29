@@ -1,7 +1,7 @@
 /*------------
  common utilities 
 ------------------*/
-.specific-heading-color{
+.specific-color{
     color: #E76F51;
 }
 /*------------ 
@@ -12,7 +12,7 @@ header section
     color: #FFFFFF;
 }
 .purchase-btn{
-    padding: 10px 46px;
+    padding: 10px 40px;
     border: none;
     background-color:#E76F51;
     color: #FFFFFF;
@@ -38,4 +38,7 @@ client review
 /* Subscribe */
 .subscribe-style{
     background-color: rgb(225, 221, 230);
+}
+.icon{
+    color: rgba(3, 13, 77, 0.815);
 }
